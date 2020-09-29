@@ -1,0 +1,99 @@
+/* remove all basic styling from broswer*/
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  background: linear-gradient(0.25turn, #00203FFF, rgb(119, 240, 185));
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+header{
+  font-size: 1.4rem;
+}
+
+header,form{
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input, form button{
+  padding: 0.5rem;
+  font-size: 2rem;
+  border:none;
+  background: white;
+}
+
+form button{
+  color: rgb(119, 240, 185);
+  background: white;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+form button:hover{
+  background: rgb(119, 240, 185);
+  color: white;
+}
+
+.todo-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*  td l :aan elkaar of met streepje?  */
+.todoList{
+  min-width: 40%;
+  list-style: none;
+}
+
+.todo{
+  margin: 0.5rem;
+  color: #00203FFF;
+  background: white;
+  font-size: 1.5rem;
+  display: flex; /* so itemsjump next to each other */
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease; /* not working?*/
+}
+
+.todo li{
+  flex: 1;
+}
+
+.trash-btn, .complete-btn{
+  background:  rgb(119, 240, 185);
+  color:#00203FFF;
+  border: none;
+  padding: 1rem;
+  cursor:pointer;
+  font-size: 1rem;
+}
+
+.complete-btn{
+  background: rgb(14, 238, 137);
+}
+
+.todo-item{
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash, .fa-check{
+  pointer-events: none;
+}
+
+.completed{
+  text-decoration: line-through; 
+}
+
+.fall{
+  transform:translateY(8rem) rotateZ(20deg);
+  opacity: 0;
+}
