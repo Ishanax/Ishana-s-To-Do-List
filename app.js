@@ -64,25 +64,6 @@ function deleteCheck(e) {
   }
 }
 
-/*function for the 3 filter options
-function filterTodo(e) {
-  const todos = todoList.childNodes;
-  //The forEach() method calls a function once for each element in an array, in order.
-  todos.forEach(function(todo){
-    //Use the switch statement to select one of many code blocks to be executed. The value here is all, completed or uncompleted
-    switch(e.target.value) {
-      case "all": //... in case we click on all, what we want to do is show all. Which is already the case, so:
-        todo.style.display = "flex";
-        break;
-      case "completed":
-        if(todo.classList.contains('completed')) {
-          todo.style.display = 'flex';
-        } else {
-          todo.style.display = 'none';
-        }
-    }
-  });
-} */
 
 function saveLocalTodos(todo){
   //Do I already have todos in there?
@@ -100,7 +81,3 @@ function saveLocalTodos(todo){
   }
 }
 
-if (typeof(Storage) !== "undefined") {
-  // Store
-  localStorage.setItem("lastname", "Smith");
-}
